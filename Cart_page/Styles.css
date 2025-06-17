@@ -1,0 +1,198 @@
+/* Setting all elements to have border and radius 0 */
+*{
+    border: 0;
+    margin: 0;
+}
+
+body{
+    background: linear-gradient(to right, #556270, #2c9e96);
+    color: #fff;
+}
+
+.navbar{
+    background-color: #FCF3F3;
+    display: flex;
+    justify-content: flex-end;  /* letting the links move to right side of navbar */
+    align-items: center;
+    box-shadow: 0px 1px 10px #000000; /* x offest, y offset, opacity, color */
+    width: 100%;
+    height: 70px;
+}
+
+
+.navbar div a{
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;  /* remvoing the underline feature from the links */
+    margin-right: 50px;
+    cursor: pointer;
+    transition: color 0.3s; /* making sure the link's color changes smoothly */
+}
+
+/* Active link should be the color specified */
+nav > div .active {
+color: #d1008b;
+}
+
+/* When hovering on a link that isn't active, it's color will change to the one specified */
+.navbar div a:hover:not(.active){  
+    color: #dc76ba;
+}
+
+/* nav > div .linkImage{
+    color: #d1008b;
+} */
+
+/* display flex was applied to make the small images,
+big photo and description align in a row */
+.mainflexContainer{
+    display: flex;
+    gap: 1%;
+    margin: 5% 3% 5% 3%;    /* top right bottom left */ 
+}
+
+/* Display sflex was applied to the small images to make them
+align in a column */
+.colorPalletImages{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8%;
+}
+
+.itemAbout{
+    width: 40%;  /* Letting the item description take up 40% of the screen size */
+}
+
+/* Adding margins on top of these elements for
+spacing purposes */
+.itemAbout .price{
+    margin-top: 8px;
+}
+
+.itemAbout .description{
+    margin-top: 20px;
+}
+
+.itemAbout .material{
+    margin-top: 20px;
+}
+
+.itemAbout .durability{
+    margin-top: 8px;
+}
+
+.itemAbout .review{
+    margin-top: 20px;
+}
+
+.reviewBox{
+    width: 215px;
+    height: 60px;
+    margin-top: 8px;
+    background-color: rgba(12, 12, 12, 0.14);
+    border-radius: 10px;  /* Making the corners rounded */
+    padding: 8px;
+    box-sizing: border-box;    /*  ensuring the review box does not change in size when properties like padding are applied */
+}
+
+.reviewStars {
+    display: flex;
+    gap: 4px;
+}
+
+.addToCartFlexContainer{
+    display: flex;
+    align-items: flex-end;
+    margin-top: 32px;
+    gap: 16px;
+}
+
+#addToCartbtn{
+    background-color: #d1008b;
+    color: #fff;
+    text-align: center;
+    font-size: 1.01rem;
+    width: 120px;
+    height: 36px;
+    padding: 8px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: background-color 0.3s,
+                box-shadow 0.3s,
+                height 0.3s,
+                width 0.3s;
+}
+
+#addToCartbtn:hover{
+    background-color: #ce429f;
+    box-shadow: 0px 0px 5px #000000;
+    width: 126px;
+    height: 42px;
+}
+
+.increaseDecrease{
+    display: flex;
+    width: 25%;
+    box-sizing: border-box;
+}
+
+.minus{
+    width: 28px;
+    height: 36px;
+    background-color: #d1008b;
+    text-align: center;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+    display: flex;     /* enables us to apply justify-content and align-items below */
+    align-items: center;    /* Aligns elemnts vertically */
+    justify-content: center;    /* aligns elements horizontally */
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.minus:hover{
+    background-color: #ce429f;
+
+}
+
+.number{
+    width: 35px;
+    height: 36px;
+    background-color: #fff;
+    color: #000000;
+    font-size: 1.2rem;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plus{
+    width: 28px;
+    height: 36px;
+    background-color: #d1008b;
+    text-align: center;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.plus:hover{
+    background-color: #ce429f;
+}
+
+.totalItems{
+    font-size: 1.2rem;
+}
+
+.mainImage{
+    margin-top: -7px;
+}

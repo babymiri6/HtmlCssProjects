@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoppingCart</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+
+    <!-- This is the navigation bar -->
+    <nav class="navbar">
+        <div class="shopLink">
+            <img class="linkImage" src="../Cart_page/images/Shop.svg" alt="shop icon">
+            <a class="active" href="#">Shop</a>        
+        </div>     
+
+        <div class="accountLink">
+            <img class="linkImage" src="../Cart_page/images/Account.svg" alt="profile icon">
+            <a href="#">Account</a>
+        </div>
+
+        <div class="cartLink">
+            <img class="linkImage" src="../Cart_page/images/Cart.svg" alt="cart icon">
+            <a href="#">Cart</a>
+        </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- outting the three little imgs, the big image, and 
+    the text on the side in one container for easy
+    arrangement -->
+
+    <main class="mainflexContainer">
+
+        <!-- putting the small images in one section -->
+        <section class="colorPalletImages">
+            <img class="black" src="..\Cart_page\images\black.png" alt="Black dumbbell">
+
+            <img class="blue" src="..\Cart_page\images\Blue.png" alt="Blue dumbbell">
+
+            <img class="pink" src="..\Cart_page\images\Pink.png" alt="Pink dumbbell">
+
+            <img class="lemongreen" src="..\Cart_page\images\Lemongreen.png" alt="lemongreen dumbbell">
+        </section>
+
+        <!-- putting the main image in a section -->
+        <section class="itemImage">
+            <img class="mainImage" src="..\Cart_page\images\MainImage.png" alt="Picture of the dumbbell color you have selected">
+        </section>    
+
+        <!-- putting information about the item to be
+        purchased in an aside -->
+        <aside class="itemAbout">
+            <h2>HEX DUMBBELL</h2>
+
+            <H3 class="price">₵ 450</H3>
+
+            <p class="description">The Hex Dumbbell is a <b>versatile</b> and essential
+                tool for any strength training regimen. With its
+                <b>durable</b> design and <b>ergonomic</b> grip, it ensures
+                a comfortable and secure workout experience.
+            </p>
+
+            <p class="material">
+                <b>Material:</b> High-quality cast iron with rubber coating
+            </p>
+
+            <p class="durability">
+                <b>Durability:</b> Rubber coating protects floors and equipment
+            </p>
+
+            <P class="review">Review</P>
+
+            <!-- creating a div for the review stars -->
+            <div class="reviewBox">
+            <div class="reviewStars">
+                <img src="../Cart_page/images/Black star.png" alt="a star rating">
+                <img src="../Cart_page/images/Black star.png" alt="a star rating">
+                <img src="../Cart_page/images/Black star.png" alt="a star rating">
+                <img src="../Cart_page/images/Black star.png" alt="a star rating">
+            </div>
+            </div>
+            
+
+            <!-- creating a flex box for the "add to cart" button,
+            Increase or decrease, and no of items -->
+            <div class="addToCartFlexContainer">
+                <button class="addToCartbtn" id="addToCartbtn" value="add">Add to cart</button>
+
+                <div class="increaseDecrease">
+                    <div class="minus">
+                        <p>-</p>
+                    </div>
+                    <div class="number">
+                        <p>0</p>
+                    </div>
+                    <div class="plus">
+                        <P>+</P>
+                    </div>
+                </div>
+
+                <div class="totalItems">
+                    <p><span>0</span> item(s) added</p>
+                </div>
+             </div>
+        </aside>    
+    </main>
+</body>
+</html>
